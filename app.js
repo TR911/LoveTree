@@ -14,8 +14,9 @@ app.use('/public', express.static('./public'))
 
 app.get('/', (req, res) => {
 
-    res.sendFile(path.join(__dirname, 'index.html'))
+    //res.sendFile(path.join(__dirname, 'index.html'))
 
+    res.send("server running ok")
 })
 
 
