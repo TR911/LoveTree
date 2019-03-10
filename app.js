@@ -4,7 +4,7 @@ const path = require('path')
 
 const app = express()
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('server running...');
 })
 
@@ -12,7 +12,7 @@ app.listen(3000, () => {
 app.use('/public', express.static('./public'))
 
 
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
 
     res.sendFile(path.join(__dirname, 'index.html'))
 
