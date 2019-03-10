@@ -1,0 +1,134 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background-color: #f0f0f4;
+	background-image: url(http://davealger.info/i/squares.png);
+	background-position: bottom;
+	animation: 12s linear 0s infinite bp;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes bp {
+	0% {
+		background-color: ivory;
+		background-position: 200px 0;
+	}
+
+	25% {
+		background-color: white;
+		background-position: 150px 50px;
+	}
+
+	50% {
+		background-color: ivory;
+		background-position: 100px 100px;
+	}
+
+	75% {
+		background-color: white;
+		background-position: 50px 150px;
+	}
+
+	100% {
+		background-color: ivory;
+		background-position: 0 200px;
+	}
+}
+
+#ds-thread .ds-powered-by {
+	display: none!important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffe;
+	font-size: 14px;
+	font-family: '楷体',sans-serif;
+	color: #231F20;
+	overflow: auto
+}
+
+a {
+	color: #F99;
+	font-size: 18px;
+}
+
+.a {
+	text-decoration: none;
+	font-size: 24px;
+	font-family: "华文行楷";
+}
+
+#main {
+	width: 100%;
+}
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+	height: 680px;
+}
+
+#text {
+	width: 400px;
+	height: 425px;
+	left: 60px;
+	top: 10px;
+	position: absolute;
+}
+
+#code {
+	display: none;
+	font-size: 18px;
+}
+
+#clock-box {
+	position: absolute;
+	left: 60px;
+	top: 550px;
+	font-size: 28px;
+	display: none;
+}
+
+#clock-box a {
+	font-size: 28px;
+	text-decoration: none;
+}
+
+#clock {
+	margin-left: 48px;
+}
+
+#clock .digit {
+	font-size: 64px;
+}
+
+#canvas {
+	margin: 0 auto;
+	width: 1100px;
+	height: 680px;
+}
+
+#error {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 60px;
+	display: none;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.say {
+	margin-left: 6px;
+}
+
+.space {
+	margin-right: 150px;
+}
