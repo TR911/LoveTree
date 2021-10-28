@@ -1,81 +1,107 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="googlebot" content="noindex, nofollow" />
-    <title>页面标题</title>
-    <script type="text/javascript" src=""></script>
-    <script type="text/javascript" src="./public/jquery.min.js"></script>
-    <script type="text/javascript" src="./public/jscex.min.js"></script>
-    <script type="text/javascript" src="./public/jscex-parser.js"></script>
-    <script type="text/javascript" src="./public/jscex-jit.js"></script>
-    <script type="text/javascript" src="./public/jscex-builderbase.m.js"></script>
-    <script type="text/javascript" src="./public/jscex-async.min.js"></script>
-    <script type="text/javascript" src="./public/jscex-async-powerpa.js"></script>
-    <script type="text/javascript" src="./public/functions.js"></script>
-    <script type="text/javascript" src="./public/love.js"></script>
-    <link rel="stylesheet" type="text/css" href="./public/main.css" />
-</head>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="googlebot" content="noindex, nofollow" />
+		<title>页面标题</title>
+		<script type="text/javascript" src="./public/jquery.min.js"></script>
+		<script type="text/javascript" src="./public/jscex.min.js"></script>
+		<script type="text/javascript" src="./public/jscex-parser.js"></script>
+		<script type="text/javascript" src="./public/jscex-jit.js"></script>
+		<script type="text/javascript" src="./public/jscex-builderbase.m.js"></script>
+		<script type="text/javascript" src="./public/jscex-async.min.js"></script>
+		<script type="text/javascript" src="./public/jscex-async-powerpa.js"></script>
+		<script type="text/javascript" src="./public/functions.js"></script>
+		<script type="text/javascript" src="./public/love.js"></script>
+		<link rel="stylesheet" type="text/css" href="./public/main.css" />
+	</head>
 
-<body>
-    <audio autoplay="">
-        <source src="./public/BGM.mp3" type="audio/mp3">
-        </source>
-    </audio>
-    <div id="main">
-        <div id="error">
-            CX注:本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌或者火狐浏览器，或者其他游览器的最新版本。
-        </div>
-        <div id="wrap">
-            <div id="text" style="margin-top:0px;">
-                <div id="code">
-                    <span class="say"><font color="cc1883"><h3><a class="a" href="#">内容标题</a></h3></font></span>
-                    <span class="say"><font color="#FF0000"><font size="+1">XXX</font></font></span>
-                    <br />
-                    <span class="say">&nbsp;</span>
-                    <br />
-                    <span class="say"><font color="FF00FA">第一行文字</font></span>
-                    <br />
-                    <span class="say"><font color="FF00FA">第二行文字</font></span>
-                    <br />
-                    <span class="say">&nbsp;</span>
-                    <br />
-                    <span class="say"><font color="F16D7E">第三行文字</font></span>
-                    <br />
-                    <span class="say"><font color="F16D7E">第四行文字</font></span>
-                    <br />
-                    <span class="say">&nbsp;</span>
-                    <br />
-                    <span class="say"><font color="#999933">第五行文字</font></span>
-                    <br />
-                    <span class="say"><font color="#999933">第六行文字</font></span>
-                    <br />
-                    <span class="say">&nbsp;</span>
-                    <br />
-                    <span class="say"><font color="FF00FA">第七行文字</font></span>
-                    <br />
-                    <span class="say"><font color="FF00FA">第八行文字</font></span>
-                    <br />
-                    <span class="say">&nbsp;</span>
-                    <br />
-                    <span class="say"><font color="#FF0000">第九行文字</font></span>
-                    <br />
-                    <span class="say"><font color="#FF0000">第十行文字</font></span>
-                </div>
-            </div>
-            <div id="clock-box">
-                <font color="#000000" ;="">我</font>
-                <!--<span class="STYLE1">与</span>!-->
-                <font color="#000000">们</font>
-                <span class="STYLE1">已经在一起了</span>
-                <div id="clock"></div>
-            </div>
-            <canvas class="" id="canvas" width="1100" height="680"></canvas>
-        </div>
-    </div>
-    <script type="application/javascript" src="./public/main.js"></script>
-</body>
+	<body>
+		<audio id="bgm" src="./public/BGM.mp3" type="audio/mp3"></audio>
+
+		<div id="main">
+			<div id="error">
+				CX注:本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌或者火狐浏览器，或者其他游览器的最新版本。
+			</div>
+			<div id="wrap">
+				<div id="text" style="margin-top:0px;">
+					<div id="code">
+						<span class="say">
+							<font color="cc1883">
+								<h3><a class="a" href="#">内容标题</a></h3>
+							</font>
+						</span>
+						<span class="say">
+							<font color="#FF0000">
+								<font size="+1">XXX</font>
+							</font>
+						</span>
+						<br />
+						<span class="say">&nbsp;</span>
+						<br />
+						<span class="say">
+							<font color="FF00FA">第一行文字</font>
+						</span>
+						<br />
+						<span class="say">
+							<font color="FF00FA">第二行文字</font>
+						</span>
+						<br />
+						<span class="say">&nbsp;</span>
+						<br />
+						<span class="say">
+							<font color="F16D7E">第三行文字</font>
+						</span>
+						<br />
+						<span class="say">
+							<font color="F16D7E">第四行文字</font>
+						</span>
+						<br />
+						<span class="say">&nbsp;</span>
+						<br />
+						<span class="say">
+							<font color="#999933">第五行文字</font>
+						</span>
+						<br />
+						<span class="say">
+							<font color="#999933">第六行文字</font>
+						</span>
+						<br />
+						<span class="say">&nbsp;</span>
+						<br />
+						<span class="say">
+							<font color="FF00FA">第七行文字</font>
+						</span>
+						<br />
+						<span class="say">
+							<font color="FF00FA">第八行文字</font>
+						</span>
+						<br />
+						<span class="say">&nbsp;</span>
+						<br />
+						<span class="say">
+							<font color="#FF0000">第九行文字</font>
+						</span>
+						<br />
+						<span class="say">
+							<font color="#FF0000">第十行文字</font>
+						</span>
+					</div>
+				</div>
+				<div id="clock-box">
+					<font color="#000000">我</font>
+					<!--<span class="STYLE1">与</span>!-->
+					<font color="#000000">们</font>
+					<span class="STYLE1">已经在一起了</span>
+					<div id="clock"></div>
+				</div>
+				<canvas id="canvas" width="1100" height="680"></canvas>
+			</div>
+		</div>
+
+		<script type="application/javascript" src="./public/main.js"></script>
+	</body>
 
 </html>
